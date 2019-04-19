@@ -1,0 +1,127 @@
+/* global rules */
+* {
+  box-sizing: border-box;
+}
+
+/* typography */
+@font-face {
+  font-family: 's04b03';
+  src: url('s04b03.ttf');
+}
+
+html {
+  font-family: 's04b03';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p, li, label, input, textarea {
+  font-size: 1.5rem;
+}
+
+.long-text {
+  text-transform: none;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+/* links */
+a {
+  color: #ee1c47;
+  text-decoration: none;
+}
+
+a[href^="http"]::after {
+  margin-left: .5rem;
+  content: '→';
+}
+
+a:hover {
+  border-bottom: 2px solid #ee1c47;
+}
+
+a:focus {
+  outline: 2px solid #ee1c47;
+}
+
+/* lists */
+ul {
+  list-style: '•';
+  padding-left: 1.5rem;
+}
+
+li {
+  padding-left: .5rem;
+}
+
+/* forms */
+label, input, textarea {
+  display: block;
+  margin: .25rem 0;
+}
+
+input, textarea {
+  width: 100%;
+  border: 2px solid #222;
+  padding: .25rem;
+}
+
+input {
+  max-width: 20rem;
+}
+
+textarea {
+  resize: none;
+  max-width: 40rem;
+}
+
+.field {
+  margin: 1rem 0;
+}
+
+/* blocks */
+body {
+  margin: 0 1rem;
+}
+
+h1, p {
+  margin: 1rem 0;
+}
+
+.logo {
+  height: 50px;
+  fill: #222;
+}
+
+.main-header {
+  margin: 2rem 0;
+}
+
+.main-header > h1 {
+  display: none;
+}
+
+.main-header > .tagline {
+  margin: .25rem 0;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+button {
+  background: #ee1c47;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}

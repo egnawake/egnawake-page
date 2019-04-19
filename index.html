@@ -11,11 +11,14 @@
 
   <!-- external styles -->
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="main-header">
-    <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 55 10">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 10" class="logo">
       <title>Egnawake logo</title>
       <path d="M0 2 m1 0 h4 v1 h1 v3 h-1 v-2 h-3 v2 h3 v1 h1 v1 h-5 v-1 h-1 v-4 h1 Z" />
       <path d="M7 2 m1 0 h5 v7 h-1 v1 h-4 v-1 h-1 v-2 h1 v1 h3 v-1 h-3 v-1 h3 v-2 h-3 v2 h-1 v-3 h1 Z" />
@@ -33,6 +36,13 @@
   <main>
     <section>
       <header>
+        <h1>About me</h1>
+        <p class="long-text">I'm John, a front-end web developer from Portugal. I play video games a lot and like doing vector illustration as a hobby.</p>
+      </header>
+    </section>
+
+    <section>
+      <header>
         <h1>My guidelines</h1>
       </header>
       <ul>
@@ -47,9 +57,9 @@
         <h1>My progress</h1>
       </header>
       <ul>
-        <li><a href="https://github.com/Trabincle">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/joao-crvs-inacio/">LinkedIn</a></li>
-        <li><a href="https://egnawake.artstation.com/">ArtStation</a></li>
+        <li><a href="https://github.com/Trabincle" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/joao-crvs-inacio/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://egnawake.artstation.com/" target="_blank">ArtStation</a></li>
       </ul>
     </section>
 
@@ -70,6 +80,7 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="10"></textarea>
         </div>
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
