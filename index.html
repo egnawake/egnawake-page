@@ -6,11 +6,72 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Egnawake</title>
 
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+
+  <!-- external styles -->
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
+
 <body>
-  <header>
-    <object data="logo.svg"></object>
+  <header class="main-header">
+    <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 55 10">
+      <title>Egnawake logo</title>
+      <path d="M0 2 m1 0 h4 v1 h1 v3 h-1 v-2 h-3 v2 h3 v1 h1 v1 h-5 v-1 h-1 v-4 h1 Z" />
+      <path d="M7 2 m1 0 h5 v7 h-1 v1 h-4 v-1 h-1 v-2 h1 v1 h3 v-1 h-3 v-1 h3 v-2 h-3 v2 h-1 v-3 h1 Z" />
+      <path d="M14 2 h5 v1 h1 v5 h-2 v-3 h-1 v-1 h-2 v4 h-1 Z" />
+      <path d="M21 2 m1 0 h4 v3 h1 v3 h-5 v-1 h2 v-3 h-2 v3 h-1 v-4 h1 Z" />
+      <path d="M28 2 h1 v3 h1 v-2 h1 v1 h1 v-2 h2 v5 h-1 v1 h-4 v-1 h-1 Z" />
+      <path d="M35 2 m1 0 h4 v3 h1 v3 h-5 v-1 h2 v-3 h-2 v3 h-1 v-4 h1 Z" />
+      <path d="M42 2 m0 -2 h1 v2 h1 v2 h1 v-1 h1 v-1 h2 v2 h-1 v1 h-1 v1 h-1 v1 h-1 v1 h-2 Z m4 6 h2 v2 h-2 Z" />
+      <path d="M49 2 m1 0 h4 v1 h1 v3 h-1 v-2 h-3 v2 h3 v1 h1 v1 h-5 v-1 h-1 v-4 h1 Z" />
+    </svg>
+    <h1>Egnawake</h1>
+    <p class="tagline">Crafter for the web</p>
   </header>
+
+  <main>
+    <section>
+      <header>
+        <h1>My guidelines</h1>
+      </header>
+      <ul>
+        <li>Simplicity</li>
+        <li>Clarity</li>
+        <li>Identity</li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h1>My progress</h1>
+      </header>
+      <ul>
+        <li><a href="https://github.com/Trabincle">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/joao-crvs-inacio/">LinkedIn</a></li>
+        <li><a href="https://egnawake.artstation.com/">ArtStation</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <form>
+        <header>
+          <h1>Message me</h1>
+        </header>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="10"></textarea>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
