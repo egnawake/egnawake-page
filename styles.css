@@ -1,28 +1,40 @@
-/* global rules */
+/* #global-rules */
 * {
   box-sizing: border-box;
 }
 
-/* typography */
+
+
+/* #typography */
 @font-face {
-  font-family: 's04b03';
-  src: url('s04b03.ttf');
+  font-family: 'Pixel Operator 8';
+  src: url('PixelOperator8.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Pixel Operator 8';
+  src: url('PixelOperator8-Bold.ttf') format('truetype');
+  font-weight: bold;
 }
 
 html {
-  font-family: 's04b03';
+  font-family: 'Titillium Web', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #222;
   text-transform: lowercase;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 400;
+h1, .tagline {
+  font-family: 'Pixel Operator 8', sans-serif;
 }
 
-p, li, label, input, textarea {
+h1 {
+  font-size: 1.5rem;
+}
+
+p, li, label, input, textarea, button {
   font-size: 1.5rem;
 }
 
@@ -31,10 +43,12 @@ p, li, label, input, textarea {
 }
 
 button {
-  font-size: 1.5rem;
+  text-transform: inherit;
 }
 
-/* links */
+
+
+/* #links */
 a {
   color: #ee1c47;
   text-decoration: none;
@@ -42,7 +56,7 @@ a {
 
 a[href^="http"]::after {
   margin-left: .5rem;
-  content: '→';
+  content: url('external-link.svg');
 }
 
 a:hover {
@@ -53,17 +67,17 @@ a:focus {
   outline: 2px solid #ee1c47;
 }
 
-/* lists */
+
+
+/* #lists */
 ul {
-  list-style: '•';
+  list-style: none;
   padding-left: 1.5rem;
 }
 
-li {
-  padding-left: .5rem;
-}
 
-/* forms */
+
+/* #forms */
 label, input, textarea {
   display: block;
   margin: .25rem 0;
@@ -84,11 +98,21 @@ textarea {
   max-width: 40rem;
 }
 
+button {
+  background: #ee1c47;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
 .field {
   margin: 1rem 0;
 }
 
-/* blocks */
+
+
+/* #blocks */
 body {
   margin: 0 1rem;
 }
@@ -99,7 +123,7 @@ h1, p {
 
 .logo {
   height: 50px;
-  fill: #222;
+  fill: #ee1c47;
 }
 
 .main-header {
@@ -110,7 +134,7 @@ h1, p {
   display: none;
 }
 
-.main-header > .tagline {
+.tagline {
   margin: .25rem 0;
 }
 
@@ -118,10 +142,27 @@ section {
   margin: 4rem 0;
 }
 
-button {
-  background: #ee1c47;
-  color: white;
-  border: none;
-  padding: .5rem 1rem;
-  cursor: pointer;
+li {
+  margin: .8rem 0;
+}
+
+
+
+/* #queries */
+@media screen and (min-width: 600px) {
+  body {
+    margin: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 0 20rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    margin: 0 30rem;
+  }
 }
