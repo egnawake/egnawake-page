@@ -52,7 +52,7 @@ a {
 
 a[href^="http"]::after {
   margin-left: .5rem;
-  content: url('external-link.svg');
+  content: url('assets/external-link.svg');
 }
 
 a:hover {
