@@ -19,15 +19,11 @@
 }
 
 html {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Pixel Operator 8', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #222;
   text-transform: lowercase;
-}
-
-h1, .tagline {
-  font-family: 'Pixel Operator 8', sans-serif;
 }
 
 h1 {
@@ -35,7 +31,7 @@ h1 {
 }
 
 p, li, label, input, textarea, button {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .long-text {
@@ -64,7 +60,12 @@ a:hover {
 }
 
 a:focus {
-  outline: 2px solid #ee1c47;
+  outline: none;
+}
+
+a:focus::before {
+  content: '>';
+  margin-right: .25rem;
 }
 
 
@@ -155,9 +156,9 @@ li {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   body {
-    margin: 0 20rem;
+    margin: 0 15rem;
   }
 }
 
