@@ -90,6 +90,10 @@ input, textarea {
   padding: .25rem;
 }
 
+input:focus, textarea:focus {
+  border-color: #ee1c47;
+}
+
 input {
   max-width: 20rem;
 }
