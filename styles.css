@@ -8,13 +8,13 @@
 /* #typography */
 @font-face {
   font-family: 'Pixel Operator 8';
-  src: url('PixelOperator8.ttf') format('truetype');
+  src: url('assets/PixelOperator8.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Pixel Operator 8';
-  src: url('PixelOperator8-Bold.ttf') format('truetype');
+  src: url('assets/PixelOperator8-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ a {
 
 a[href^="http"]::after {
   margin-left: .5rem;
-  content: url('external-link.svg');
+  content: url('assets/external-link.svg');
 }
 
 a:hover {
