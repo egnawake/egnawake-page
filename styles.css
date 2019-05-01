@@ -90,7 +90,7 @@ input:focus, textarea:focus {
 }
 
 input {
-  max-width: 20rem;
+  max-width: 400px;
 }
 
 textarea {
