@@ -181,6 +181,20 @@ li {
   content: '>';
 }
 
+.goomba {
+  width: 32px;
+  height: 32px;
+  background: url('sketchbook/goomba-sheet.png');
+  background-repeat: no-repeat;
+  animation: play 1s infinite steps(2);
+}
+
+@keyframes play {
+  to {
+    background-position: -64px top;
+  }
+}
+
 /* #queries */
 @media screen and (min-width: 600px) {
   body {
