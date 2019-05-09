@@ -184,7 +184,7 @@ li {
 .goomba {
   width: 32px;
   height: 32px;
-  background: url('sketchbook/goomba-sheet.png');
+  background: url('assets/goomba-sheet.png');
   background-repeat: no-repeat;
   animation: play 1s infinite steps(2);
 }
