@@ -192,7 +192,7 @@ li {
 
 .sprite {
   background-repeat: no-repeat;
-  animation: two-sprites 1s infinite steps(2);
+  animation: two-sprites 1.5s infinite steps(2);
 }
 
 .goomba {
