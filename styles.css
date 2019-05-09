@@ -190,17 +190,26 @@ li {
   content: '>';
 }
 
+.sprite {
+  background-repeat: no-repeat;
+  animation: two-sprites 1s infinite steps(2);
+}
+
 .goomba {
   width: 32px;
   height: 32px;
-  background: url('assets/goomba-sheet.png');
-  background-repeat: no-repeat;
-  animation: play 1s infinite steps(2);
+  background-image: url('assets/goomba-sheet.png');
 }
 
-@keyframes play {
+.octorok {
+  width: 32px;
+  height: 30px;
+  background-image: url('assets/octorok-sheet.png');
+}
+
+@keyframes two-sprites {
   to {
-    background-position: -64px top;
+    background-position: -64px 0%; /* -(sprite width) * 2 */
   }
 }
 
