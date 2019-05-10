@@ -207,9 +207,15 @@ li {
   background-image: url('assets/octorok-sheet.png');
 }
 
+.chao {
+  width: 28px;
+  height: 40px;
+  background-image: url('assets/chao-sheet.png');
+}
+
 @keyframes two-sprites {
   to {
-    background-position: -64px 0%; /* -(sprite width) * 2 */
+    background-position: 200% 0%;
   }
 }
 
